@@ -15,7 +15,6 @@ class MatchDataPreprocessor:
         
         # 특성 목록 정의
         self.features = [
-            'abilityPower', 'armor', 'magicResist', 'attackSpeed',
             'health', 'healthMax', 'currentGold', 'totalDamageDone',
             'totalDamageDoneToChampions', 'jungleMinionsKilled',
             'level', 'minionsKilled', 'position_x', 'position_y',
@@ -51,10 +50,6 @@ class MatchDataPreprocessor:
                 position = participant_data.get('position', {})
                 
                 frame_data['participants'][participant_id] = {
-                    'abilityPower': champion_stats.get('abilityPower', 0),
-                    'armor': champion_stats.get('armor', 0),
-                    'magicResist': champion_stats.get('magicResist', 0),
-                    'attackSpeed': champion_stats.get('attackSpeed', 0),
                     'health': champion_stats.get('health', 0),
                     'healthMax': champion_stats.get('healthMax', 0),
                     'currentGold': participant_data.get('currentGold', 0),
@@ -75,7 +70,7 @@ class MatchDataPreprocessor:
     def create_time_series_data(self, processed_frames):
         """시계열 데이터 생성 및 정렬"""
         # 0~600000 타임스탬프에 대한 데이터 포인트 생성 (1초 간격)
-        timestamps = np.arange(0, 600001, 1000)
+        timestamps = np.arange(0, 600001, 30000)
         
         # 3차원 배열 생성 (timestamps, participants, features)
         data = np.zeros((len(timestamps), 10, len(self.features)))
