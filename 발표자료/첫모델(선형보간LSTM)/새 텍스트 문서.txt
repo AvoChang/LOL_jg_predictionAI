@@ -1,0 +1,214 @@
+모델은 크게 두 부분으로 나뉩니다
+
+1. LSTM 계층
+2. 완전연결(Dense) 계층(회귀 출력)
+
+아래에서 순서대로 각 부분이 어떤 역할을 하고, 입·출력 텐서의 차원(shape)이 어떻게 변하는지 설명하겠습니다.
+
+---
+
+## 1. 입력 형태
+
+ 입력 데이터 `(batch_size, 21, 110)`
+
+   `batch_size` 한 번에 다루는 샘플 개수
+   `21` 시계열 길이(타임스텝 수)
+   `110` 한 타임스텝당 피처 수
+
+     (예 21분 동안 1분 간격으로 110차원 상태 벡터를 기록했다 가정)
+
+모델에는 이 `(21, 110)`짜리 시계열을 그대로 넣습니다.
+
+---
+
+## 2. LSTM 계층
+
+```python
+self.lstm = nn.LSTM(
+    input_size=110,     # 한 타임스텝당 피처 차원
+    hidden_size=64,     # 은닉 상태(hidden state) 차원
+    num_layers=1,       # LSTM 층 수
+    batch_first=True    # 입력 텐서가 (batch, seq_len, feat_dim)임을 지정
+)
+```
+
+ 입력
+
+   `x`의 차원 `(batch_size, 21, 110)`
+
+ 내부 동작
+
+  1. 첫 번째 시점(t=0)부터 마지막 시점(t=20)까지 순차적으로 처리
+  2. `hidden_size=64`인 은닉 벡터와 셀 상태(cell state)를 유지하며 다음 타임스텝으로 넘김
+
+      `num_layers=1`이므로, 단층(single-layer) LSTM
+      `batch_first=True`이므로 텐서가 `(batch, time, feat)` 순서로 들어오면 내부에서 자동으로 맞춰 처리
+
+ 출력
+
+  ```python
+  out, (hn, cn) = self.lstm(x)
+  ```
+
+   `out`의 차원 `(batch_size, 21, 64)`
+
+     시퀀스의 모든 타임스텝(t=0~20)에서의 은닉 상태(hidden state)를 반환
+     즉 `out[, t, ]`는 t타임스텝에서의 64차원 은닉 벡터
+   `(hn, cn)`
+
+     `hn` (hidden state) `(num_layers, batch_size, 64)`
+     `cn` (cell state)   `(num_layers, batch_size, 64)`
+     여기서는 `num_layers=1`이므로 실제로 `hn.shape = (1, batch_size, 64)`
+
+ 마지막 은닉 상태만 뽑기
+
+  ```python
+  last_hidden = hn[-1]  # shape (batch_size, 64)
+  ```
+
+   `hn[-1]`을 쓰면 “마지막 LSTM 층의(hidden, cell 중 hidden) 은닉 상태”를 가져옵니다.
+   결과적으로 `(batch_size, 64)` 형태가 됩니다.
+
+---
+
+## 3. 완전연결(Dense) 계층
+
+LSTM에서 뽑은 `(batch_size, 64)`짜리 마지막 은닉 상태를 두 단계의 Dense 레이어에 통과시켜 최종 `(batch_size, 2)` 회귀 출력을 만듭니다.
+
+1. 첫 번째 Dense (fc1) + ReLU 활성화
+
+   ```python
+   self.fc1 = nn.Linear(64, 32)
+   self.relu = nn.ReLU()
+   ```
+
+    입력 `(batch_size, 64)`
+    연산
+
+     1. `self.fc1(last_hidden)` → `(batch_size, 32)`
+     2. `self.relu(...)` → `(batch_size, 32)`
+    역할 LSTM이 뽑아낸 64차원 정보를 비선형 변환을 거쳐 32차원으로 압축.
+    ReLU 활성화를 넣어 “음수 성분을 0으로” 바꾸고, 뒤의 회귀층에서 필요한 정보만 남김.
+
+2. 두 번째 Dense (fc2, 회귀 출력)
+
+   ```python
+   self.fc2 = nn.Linear(32, 2)
+   ```
+
+    입력 `(batch_size, 32)`
+    연산 `self.fc2(x)` → `(batch_size, 2)`
+    역할 32차원 중간 표현을 (x, y) 좌표 두 개(연속값)로 매핑.
+    활성화 함수는 `linear`(기본)이어서, 출력값 범위에 제약이 없습니다.
+
+      다만, 나중에 레이블을 `[0,1]` 범위로 정규화했다면 `Sigmoid`를 붙여도 무방합니다.
+
+---
+
+## 4. 전체 순전파 흐름 (forward)
+
+```python
+def forward(self, x)
+    # 1) LSTM 통과
+    out, (hn, cn) = self.lstm(x)      # out (batch, 21, 64), hn (1, batch, 64)
+
+    # 2) 마지막 은닉 상태 추출
+    last_hidden = hn[-1]              # shape (batch, 64)
+
+    # 3) 첫 번째 FC + ReLU
+    x = self.fc1(last_hidden)         # (batch, 32)
+    x = self.relu(x)                  # (batch, 32)
+
+    # 4) 두 번째 FC (회귀 출력)
+    x = self.fc2(x)                   # (batch, 2)
+
+    return x
+```
+
+1. `self.lstm(x)`
+
+    입력 `(batch, 21, 110)` → 중간 `(batch, 21, 64)` 텐서 + `(hn, cn)`
+2. `hn[-1]`
+
+    `(1, batch, 64)` 중 마지막 레이어 인덱스 가리켜 `(batch, 64)` 추출
+3. `self.fc1` → `ReLU`
+
+    `(batch, 64)` → `(batch, 32)`
+4. `self.fc2`
+
+    `(batch, 32)` → `(batch, 2)`
+    각 샘플에 대해 최종 `(x, y)` 좌표 반환
+
+---
+
+## 5. 손실 함수 및 학습 과정
+
+ 손실 함수 MSELoss (평균제곱오차)
+
+  ```python
+  criterion = nn.MSELoss()
+  ```
+
+   예측값 `(batch, 2)`과 레이블 `(batch, 2)` 간에 제곱 오차를 계산하여 평균을 냄.
+   레이블을 0~~1 범위로 정규화했다고 가정하면, 출력 역시 0~~1 범위 예측을 목표로 MSE가 작아지도록 학습합니다.
+
+ 최적화 알고리즘 Adam
+
+  ```python
+  optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+  ```
+
+   학습률 `1e-3`로 설정.
+   역전파를 통해 모든 LSTM과 Dense 계층의 가중치를 업데이트합니다.
+
+ 학습 루프
+
+  1. `model.train()` 모드로 전환
+  2. 각 배치에 대해
+
+      입력 텐서 `(batch, 21, 110)` → 모델 `forward` → 예측 `(batch, 2)`
+      MSELoss 계산 → `loss.backward()` → `optimizer.step()`
+  3. 에포크가 끝나면 `model.eval()`로 전환하여 검증(`validation`) 손실 계산
+
+---
+
+## 6. 텐서 차원 정리 예시
+
+예를 들어 `batch_size=8`이라고 가정했을 때,
+
+1. 입력
+
+    `batch_x` 차원 `(8, 21, 110)`
+2. LSTM 출력
+
+    `out` `(8, 21, 64)`
+    `hn` `(1, 8, 64)` → `last_hidden = hn[-1]` → `(8, 64)`
+3. 첫 번째 FC + ReLU
+
+    `(8, 64)` → `(8, 32)` → ReLU `(8, 32)`
+4. 두 번째 FC
+
+    `(8, 32)` → `(8, 2)`
+    여기서 각 샘플마다 `(x, y)` 좌표 예측값이 나옴
+
+---
+
+## 7. 요약
+
+ LSTM 계층
+
+   시계열(21타임스텝 × 110 피처)을 순차적으로 읽어들여, 마지막 은닉 상태 `(64차원)`을 뽑아냅니다.
+ FC1 + ReLU
+
+   LSTM의 64차원 출력을 32차원으로 압축하고 비선형 변환(ReLU)
+ FC2 (회귀 출력)
+
+   32차원을 `(x, y)` 두 차원으로 매핑하여 최종 좌표 예측
+ 손실(MSE)
+
+   모델 출력 `(batch, 2)` vs 레이블 `(batch, 2)`의 평균 제곱오차
+ 학습
+
+   Adam 옵티마이저로 모든 가중치(W, b)를 조정하여 MSE를 최소화
+
+이 구조를 통해, 매 샘플마다 “21타임스텝 동안의 110차원 상태 변화”를 LSTM이 순차적으로 요약(aggregating)한 뒤, FC 계층에서 “마지막 시점(21번째)에 7번 플레이어의 x,y 좌표”를 회귀 예측하도록 설계되어 있습니다.

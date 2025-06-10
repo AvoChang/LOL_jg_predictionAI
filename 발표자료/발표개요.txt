@@ -1,0 +1,91 @@
+Slide 1. 제목 및 개요 (30초)
+	League Of Legends player route tracking model based on RNN by collected data from RIOT rest API
+	제목: “LoL 정글러 동선 예측: 7번 참가자 위치 회귀 모델 연구”
+	발표자 / 소속 / 일시
+
+Slide 2. 연구 목적과 목표 (1분)
+	목적:
+	10분(600초) 시점에 7번 플레이어 위치 예측
+	경기 중 실시간 전략 보조, 리플레이 요약 등에 활용
+	목표:
+	최소 RMSE 기준 달성
+	CNN vs RNN 구조 비교·분석
+	보간(interpolated) vs 비보간(non-interpolated) 데이터 처리 기법 검증
+
+Slide 2.1. LoL 게임 시스템 및 7번 참가자 의미 (1분)
+	맵 & 챔피언 정보: 15000×15000 유닛 좌표계
+	7번 플레이어(참가자)
+	팀 내 포지션/롤(정글러 등)
+	해당 참가자 위치가 전략적 의사결정에 미치는 영향
+
+Slide 3. Riot API를 통한 게임 정보 수집 (1분)
+	match_data_collector.py
+	Riot v5 API 호출: 메타데이터 + 타임라인
+	RateLimiter로 “1초 20회 / 2분 100회” 제한 준수
+	Batch 처리
+	100개 매치 단위로 즉시 전처리기 호출
+
+Slide 4. 데이터셋 전처리 파이프라인 (1분)
+	MatchDataPreprocessor
+	Timeline JSON → 프레임별 참가자 피처(health, gold, damage, position…) 추출
+	0~600,000ms 구간 60,000ms 간격(11포인트)으로 “가장 가까운 프레임” 샘플링
+	특징별 열 정규화(챔피언ID·건강·위치 제외)
+	마지막 타임스텝 7번 플레이어 위치 추출→ 레이블
+
+Slide 5. 데이터셋 설명 (1분)
+	입력: (11, 110)
+	11타임스텝 × (10명×11피처)
+	레이블: (2,) → 7번 플레이어의 (x,y)
+	정규화: 좌표 ∕ 15 000 → [0,1]
+	필터링:
+	중심(15 000,15 000) 반지름 5 000 이내 샘플 제외
+
+Slide 6. 모델 구성: CNN 접근 (1분)
+	입력 → 2D 텐서 (channels=10, height=11, width=11) 등으로 변환
+	Conv2D → Pool → FC
+	장단점:
+	장점: 국소 패턴 캡처
+	단점: 시계열 긴 의존성 포착 어려움
+
+Slide 7. 모델 구성: RNN (Interpolated Data) (1분)
+	Many-to-One LSTM
+	input_shape=(11,110) → LSTM(64) → FC(2)
+	보간 데이터 사용
+	30초 간격 홀수 스텝 보간 포함
+	Δt, 이벤트 플래그 피처 추가 가능
+	성과: MSE ≈ 0.05 (RMSE≈0.22, 실제≈3300 유닛)
+
+Slide 8. 모델 구성: RNN (Non-Interpolated Data) (1분)
+	실제 이벤트만 사용
+	짝수 인덱스(0,2,…,20)만 입력 → (11,110)
+	보간 홀수 스텝 제거
+	Many-to-One LSTM 구조 동일
+	필터링 적용
+	반지름 5000 이내 샘플 제외
+	결과: MSE 소폭 개선
+
+Slide 9. 모델 선정 및 비교 (1분)
+	CNN vs RNN 성능 비교
+	CNN: MSE≈?
+	RNN(보간): MSE≈0.05
+	RNN(비보간): MSE≈0.xy
+	선정 기준:
+	RMSE(실제좌표)
+	복잡도 vs 성능 트레이드-오프
+
+Slide 10. 개선점 및 향후 연구 (1분)
+	모델 개선
+	Bidirectional LSTM, 2-layer, dropout
+	손실 함수: Huber Loss, L1 Loss
+	LR 스케줄러(Plateau, Cosine Annealing)
+	데이터 확대
+	추가 매치 수집
+	이벤트 레벨 피처 강화
+	실시간 서비스 연동
+	예측 가시화 도구
+	In-game 보조 UI
+
+Slide 11. 결론 및 Q&A (30초)
+	연구 요약
+	주요 성과 및 한계
+	질문 받겠습니다

@@ -8,30 +8,43 @@ from sklearn.model_selection import train_test_split
 
 # ─── 1) Dataset 클래스 정의 ───────────────────────────────────
 class LOLDataset(Dataset):
-    def __init__(self, folder_path):
+    def __init__(self, folder_path, label_max=15000.0):
         super().__init__()
-        self._data = []
-        # processed_data_*.npy 파일만 골라서 리스트업
-        file_list = [
+        self.folder_path = folder_path
+        self.label_max = label_max
+
+        # "processed_data_*.npy" 파일만 골라서
+        self.file_list = [
             fname for fname in os.listdir(folder_path)
             if fname.startswith('processed_data_') and fname.endswith('.npy')
         ]
 
-        for fname in file_list:
+        self._data = []
+        for fname in self.file_list:
             fpath = os.path.join(folder_path, fname)
             try:
-                arr = np.load(fpath, allow_pickle=True)  # shape == (1,) 이라고 기대
-                record = arr[0]
-                inp = record['input_data']  # (11, 110) float32
-                lbl = record['label']       # (2,)     float32
-                # 올바른 형태인지 한 번만 체크해 보자
-                if inp.shape == (11, 110) and lbl.shape == (2,):
-                    self._data.append((inp.astype(np.float32), lbl.astype(np.float32)))
-                else:
-                    # 만약 형태가 다르면 건너뛰기
-                    print(f"SKIP (invalid shape): {fname}", inp.shape, lbl.shape)
+                arr = np.load(fpath, allow_pickle=True)  # shape == (N,)
+                for record in arr:
+                    inp = record['input_data']  # 기대: shape (11, 110), dtype float32
+                    lbl = record['label']       # 기대: shape (2,), dtype float32
+
+                    # input_data가 (11,110)이 아니면 건너뛰기
+                    if inp.shape != (11, 110):
+                        print(f"SKIP (input shape != (11,110)): {fname} → {inp.shape}")
+                        continue
+
+                    # 레이블 정규화: [0,15000] → [0,1]
+                    if lbl.shape != (2,):
+                        print(f"SKIP (label shape != (2,)): {fname} → {lbl.shape}")
+                        continue
+                    lbl_norm = lbl.astype(np.float32) / self.label_max
+
+                    self._data.append((
+                        inp.astype(np.float32),   # (11, 110)
+                        lbl_norm                  # (2,)
+                    ))
+                # end for record
             except Exception as e:
-                # np.load 실패나 키가 없으면 건너뛰기
                 print(f"SKIP (load error): {fname} → {e}")
 
     def __len__(self):
@@ -39,8 +52,8 @@ class LOLDataset(Dataset):
 
     def __getitem__(self, idx):
         inp_np, lbl_np = self._data[idx]
-        x = torch.from_numpy(inp_np)  # (21, 110)
-        y = torch.from_numpy(lbl_np)  # (2,)
+        x = torch.from_numpy(inp_np)  # shape: (11, 110)
+        y = torch.from_numpy(lbl_np)  # shape: (2,)
         return x, y
     
 # ─── 2) Model 정의 ─────────────────────────────────────────────
@@ -121,6 +134,20 @@ if __name__ == "__main__":
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=LR)
 
+    # 데이터 정규화 여부 확인
+    import numpy as np
+
+    # Dataset을 이미 정의하셨으니, 그대로 로드합니다
+    dataset = LOLDataset("processed_data", label_max=15000.0)
+
+    # 모든 레이블을 모아서 NumPy 배열로 만듭니다
+    all_labels = np.stack([lbl.numpy() for _, lbl in dataset], axis=0)  # shape (N, 2)
+
+    print("▶ 레이블 개수:", all_labels.shape[0])
+    print("▶ 정규화된 레이블 최소값 (x, y):", all_labels.min(axis=0))
+    print("▶ 정규화된 레이블 최대값 (x, y):", all_labels.max(axis=0))
+    print("▶ 정규화된 레이블 샘플 5개:\n", all_labels[:5])
+
     # 4.3) 학습 루프
     for epoch in range(1, NUM_EPOCHS+1):
         train_loss = train_one_epoch(model, train_loader, optimizer, criterion, device)
@@ -128,4 +155,4 @@ if __name__ == "__main__":
         print(f"Epoch {epoch:02d} | Train Loss: {train_loss:.6f} | Val Loss: {val_loss:.6f}")
 
     # 필요하다면 마지막에 모델 저장
-    torch.save(model.state_dict(), "position_predictor.pt")
+    torch.save(model.state_dict(), "position_predictor_.pt")

@@ -1,0 +1,3005 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "거침없는 질주",
+				"id": "SamiraE",
+				"rawDescription": "GeneratedTip_Spell_SamiraE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_SamiraE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "무모한 충동",
+				"id": "SamiraPassive",
+				"rawDescription": "GeneratedTip_Passive_SamiraPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_SamiraPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "천부적 재능",
+				"id": "SamiraQ",
+				"rawDescription": "GeneratedTip_Spell_SamiraQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_SamiraQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "지옥불 난사",
+				"id": "SamiraR",
+				"rawDescription": "GeneratedTip_Spell_SamiraR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_SamiraR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 4,
+				"displayName": "원형 검무",
+				"id": "SamiraW",
+				"rawDescription": "GeneratedTip_Spell_SamiraW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_SamiraW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 0.0,
+			"abilityPower": 0.0,
+			"armor": 124.88400268554688,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 0.8199999928474426,
+			"attackDamage": 339.55999755859377,
+			"attackRange": 500.0,
+			"attackSpeed": 1.0651441812515259,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"critChance": 0.699999988079071,
+			"critDamage": 215.00001525878907,
+			"currentHealth": 0.0,
+			"healShieldPower": 0.0,
+			"healthRegenRate": 2.379199981689453,
+			"lifeSteal": 0.20250000059604646,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 50.43600082397461,
+			"maxHealth": 2582.76025390625,
+			"moveSpeed": 380.0,
+			"omnivamp": 0.0,
+			"physicalLethality": 10.0,
+			"physicalVamp": 0.0,
+			"resourceMax": 946.3600463867188,
+			"resourceRegenRate": 5.194095134735107,
+			"resourceType": "MANA",
+			"resourceValue": 751.7946166992188,
+			"spellVamp": 0.0,
+			"tenacity": 5.0
+		},
+		"currentGold": 363.2177734375,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "정복자",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				{
+					"displayName": "승전보",
+					"id": 9111,
+					"rawDescription": "perk_tooltip_9111",
+					"rawDisplayName": "perk_displayname_9111"
+				},
+				{
+					"displayName": "전설: 핏빛 길",
+					"id": 9103,
+					"rawDescription": "perk_tooltip_9103",
+					"rawDisplayName": "perk_displayname_9103"
+				},
+				{
+					"displayName": "최후의 일격",
+					"id": 8014,
+					"rawDescription": "perk_tooltip_CoupDeGrace",
+					"rawDisplayName": "perk_displayname_CoupDeGrace"
+				},
+				{
+					"displayName": "보물 사냥꾼",
+					"id": 8135,
+					"rawDescription": "perk_tooltip_TreasureHunter",
+					"rawDisplayName": "perk_displayname_TreasureHunter"
+				},
+				{
+					"displayName": "피의 맛",
+					"id": 8139,
+					"rawDescription": "perk_tooltip_TasteOfBlood",
+					"rawDisplayName": "perk_displayname_TasteOfBlood"
+				}
+			],
+			"keystone": {
+				"displayName": "정복자",
+				"id": 8010,
+				"rawDescription": "perk_tooltip_Conqueror",
+				"rawDisplayName": "perk_displayname_Conqueror"
+			},
+			"primaryRuneTree": {
+				"displayName": "정밀",
+				"id": 8000,
+				"rawDescription": "perkstyle_tooltip_7201",
+				"rawDisplayName": "perkstyle_displayname_7201"
+			},
+			"secondaryRuneTree": {
+				"displayName": "지배",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"statRunes": [
+				{
+					"id": 5005,
+					"rawDescription": "perk_tooltip_StatModAttackSpeed"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 17,
+		"riotId": "너누누니#KR1",
+		"riotIdGameName": "너누누니",
+		"riotIdTagLine": "KR1",
+		"summonerName": "너누누니#KR1",
+		"teamRelativeColors": true
+	},
+	"allPlayers": [
+		{
+			"championName": "레오나",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "강철심장",
+					"itemID": 3084,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3084_Description",
+					"rawDisplayName": "Item_3084_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "헤르메스의 발걸음",
+					"itemID": 3111,
+					"price": 550,
+					"rawDescription": "GeneratedTip_Item_3111_Description",
+					"rawDisplayName": "Item_3111_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "워모그의 갑옷",
+					"itemID": 3083,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3083_Description",
+					"rawDisplayName": "Item_3083_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "가시 갑옷",
+					"itemID": 3075,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_3075_Description",
+					"rawDisplayName": "Item_3075_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "파수꾼의 갑옷",
+					"itemID": 3082,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3082_Description",
+					"rawDisplayName": "Item_3082_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "루비 수정",
+					"itemID": 1028,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_1028_Description",
+					"rawDisplayName": "Item_1028_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Leona",
+			"rawSkinName": "game_character_skin_displayname_Leona_50",
+			"respawnTimer": 0.0,
+			"riotId": "청 소#도구함",
+			"riotIdGameName": "청 소",
+			"riotIdTagLine": "도구함",
+			"runes": {
+				"keystone": {
+					"displayName": "여진",
+					"id": 8439,
+					"rawDescription": "perk_tooltip_VeteranAftershock",
+					"rawDisplayName": "perk_displayname_VeteranAftershock"
+				},
+				"primaryRuneTree": {
+					"displayName": "결의",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "영감",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 33,
+				"creepScore": 10,
+				"deaths": 13,
+				"kills": 2,
+				"wardScore": 0.0
+			},
+			"skinID": 50,
+			"skinName": "혼돈의 수정 레오나",
+			"summonerName": "청 소#도구함",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "표식",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "퀸",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "윤 탈 야생화살",
+					"itemID": 3032,
+					"price": 750,
+					"rawDescription": "GeneratedTip_Item_3032_Description",
+					"rawDisplayName": "Item_3032_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "무한의 대검",
+					"itemID": 3031,
+					"price": 675,
+					"rawDescription": "GeneratedTip_Item_3031_Description",
+					"rawDisplayName": "Item_3031_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "광전사의 군화",
+					"itemID": 3006,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+					"rawDisplayName": "Item_3006_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "고속 연사포",
+					"itemID": 3094,
+					"price": 850,
+					"rawDescription": "GeneratedTip_Item_3094_Description",
+					"rawDisplayName": "Item_3094_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "피바라기",
+					"itemID": 3072,
+					"price": 325,
+					"rawDescription": "GeneratedTip_Item_3072_Description",
+					"rawDisplayName": "Item_3072_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "징수의 총",
+					"itemID": 6676,
+					"price": 525,
+					"rawDescription": "GeneratedTip_Item_6676_Description",
+					"rawDisplayName": "Item_6676_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Quinn",
+			"rawSkinName": "game_character_skin_displayname_Quinn_2",
+			"respawnTimer": 0.0,
+			"riotId": "JEROME#GOD",
+			"riotIdGameName": "JEROME",
+			"riotIdTagLine": "GOD",
+			"runes": {
+				"keystone": {
+					"displayName": "기민한 발놀림",
+					"id": 8021,
+					"rawDescription": "perk_tooltip_FleetFootwork",
+					"rawDisplayName": "perk_displayname_FleetFootwork"
+				},
+				"primaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "지배",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 14,
+				"creepScore": 100,
+				"deaths": 13,
+				"kills": 23,
+				"wardScore": 2.9166665077209474
+			},
+			"skinID": 2,
+			"skinName": "북방 정찰대 퀸",
+			"summonerName": "JEROME#GOD",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "유체화",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "렝가",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "란두인의 예언",
+					"itemID": 3143,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_3143_Description",
+					"rawDisplayName": "Item_3143_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "판금 장화",
+					"itemID": 3047,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "끝없는 절망",
+					"itemID": 2502,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_2502_Description",
+					"rawDisplayName": "Item_2502_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "강철심장",
+					"itemID": 3084,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3084_Description",
+					"rawDisplayName": "Item_3084_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "거인의 허리띠",
+					"itemID": 1011,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_1011_Description",
+					"rawDisplayName": "Item_1011_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "거인의 허리띠",
+					"itemID": 1011,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_1011_Description",
+					"rawDisplayName": "Item_1011_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Rengar",
+			"rawSkinName": "game_character_skin_displayname_Rengar_0",
+			"respawnTimer": 0.0,
+			"riotId": "뽀삐뽀삐#KR1",
+			"riotIdGameName": "뽀삐뽀삐",
+			"riotIdTagLine": "KR1",
+			"runes": {
+				"keystone": {
+					"displayName": "정복자",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "결의",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				}
+			},
+			"scores": {
+				"assists": 21,
+				"creepScore": 20,
+				"deaths": 10,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"skinName": "",
+			"summonerName": "뽀삐뽀삐#KR1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "표식",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "오리아나",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "루덴의 동반자",
+					"itemID": 6655,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_6655_Description",
+					"rawDisplayName": "Item_6655_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "쓸데없이 큰 지팡이",
+					"itemID": 1058,
+					"price": 1200,
+					"rawDescription": "GeneratedTip_Item_1058_Description",
+					"rawDisplayName": "Item_1058_Name",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "존야의 모래시계",
+					"itemID": 3157,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_3157_Description",
+					"rawDisplayName": "Item_3157_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "폭풍 쇄도",
+					"itemID": 4646,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_4646_Description",
+					"rawDisplayName": "Item_4646_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "마법사의 신발",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_3020_Description",
+					"rawDisplayName": "Item_3020_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "마법공학 교류 발전기",
+					"itemID": 3145,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_3145_Description",
+					"rawDisplayName": "Item_3145_Name",
+					"slot": 5
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Orianna",
+			"rawSkinName": "game_character_skin_displayname_Orianna_3",
+			"respawnTimer": 0.0,
+			"riotId": "Laserbeam#0728",
+			"riotIdGameName": "Laserbeam",
+			"riotIdTagLine": "0728",
+			"runes": {
+				"keystone": {
+					"displayName": "어둠의 수확",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "지배",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 29,
+				"creepScore": 60,
+				"deaths": 12,
+				"kills": 5,
+				"wardScore": 0.0
+			},
+			"skinID": 3,
+			"skinName": "암살 인형 오리아나",
+			"summonerName": "Laserbeam#0728",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "유체화",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "블라디미르",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "균열 생성기",
+					"itemID": 4633,
+					"price": 950,
+					"rawDescription": "GeneratedTip_Item_4633_Description",
+					"rawDisplayName": "Item_4633_Name",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "존야의 모래시계",
+					"itemID": 3157,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_3157_Description",
+					"rawDisplayName": "Item_3157_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "우주의 추진력",
+					"itemID": 4629,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_4629_Description",
+					"rawDisplayName": "Item_4629_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "판금 장화",
+					"itemID": 3047,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "기괴한 가면",
+					"itemID": 3147,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_3147_Description",
+					"rawDisplayName": "Item_3147_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "운명의 재",
+					"itemID": 2508,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_2508_Description",
+					"rawDisplayName": "Item_2508_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Vladimir",
+			"rawSkinName": "game_character_skin_displayname_Vladimir_0",
+			"respawnTimer": 0.0,
+			"riotId": "역 만#KR1",
+			"riotIdGameName": "역 만",
+			"riotIdTagLine": "KR1",
+			"runes": {
+				"keystone": {
+					"displayName": "어둠의 수확",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "지배",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "마법",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 16,
+				"creepScore": 40,
+				"deaths": 11,
+				"kills": 10,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"skinName": "",
+			"summonerName": "역 만#KR1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "유체화",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "샤코",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "무덤꽃",
+					"itemID": 3137,
+					"price": 200,
+					"rawDescription": "GeneratedTip_Item_3137_Description",
+					"rawDisplayName": "Item_3137_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "모렐로노미콘",
+					"itemID": 3165,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3165_Description",
+					"rawDisplayName": "Item_3165_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "리안드리의 고통",
+					"itemID": 6653,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_6653_Description",
+					"rawDisplayName": "Item_6653_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "악의",
+					"itemID": 3118,
+					"price": 650,
+					"rawDescription": "GeneratedTip_Item_3118_Description",
+					"rawDisplayName": "Item_3118_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "장화",
+					"itemID": 1001,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+					"rawDisplayName": "Item_1001_Name",
+					"slot": 5
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Shaco",
+			"rawSkinName": "game_character_skin_displayname_Shaco_0",
+			"respawnTimer": 24.791826248168947,
+			"riotId": "머더뽀꾸#KR1",
+			"riotIdGameName": "머더뽀꾸",
+			"riotIdTagLine": "KR1",
+			"runes": {
+				"keystone": {
+					"displayName": "어둠의 수확",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "지배",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 30,
+				"creepScore": 20,
+				"deaths": 11,
+				"kills": 7,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"skinName": "",
+			"summonerName": "머더뽀꾸#KR1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "표식",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "진",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "징수의 총",
+					"itemID": 6676,
+					"price": 525,
+					"rawDescription": "GeneratedTip_Item_6676_Description",
+					"rawDisplayName": "Item_6676_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "신속의 장화",
+					"itemID": 3009,
+					"price": 700,
+					"rawDescription": "GeneratedTip_Item_3009_Description",
+					"rawDisplayName": "Item_3009_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "고속 연사포",
+					"itemID": 3094,
+					"price": 850,
+					"rawDescription": "GeneratedTip_Item_3094_Description",
+					"rawDisplayName": "Item_3094_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "무한의 대검",
+					"itemID": 3031,
+					"price": 675,
+					"rawDescription": "GeneratedTip_Item_3031_Description",
+					"rawDisplayName": "Item_3031_Name",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 1,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Jhin",
+			"rawSkinName": "game_character_skin_displayname_Jhin_0",
+			"respawnTimer": 0.0,
+			"riotId": "더더아가씌#KR1",
+			"riotIdGameName": "더더아가씌",
+			"riotIdTagLine": "KR1",
+			"runes": {
+				"keystone": {
+					"displayName": "어둠의 수확",
+					"id": 8128,
+					"rawDescription": "perk_tooltip_DarkHarvest",
+					"rawDisplayName": "perk_displayname_DarkHarvest"
+				},
+				"primaryRuneTree": {
+					"displayName": "지배",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 30,
+				"creepScore": 40,
+				"deaths": 8,
+				"kills": 7,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"skinName": "",
+			"summonerName": "더더아가씌#KR1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "유체화",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "쉔",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "강철심장",
+					"itemID": 3084,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3084_Description",
+					"rawDisplayName": "Item_3084_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "헤르메스의 발걸음",
+					"itemID": 3111,
+					"price": 550,
+					"rawDescription": "GeneratedTip_Item_3111_Description",
+					"rawDisplayName": "Item_3111_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "가시 갑옷",
+					"itemID": 3075,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_3075_Description",
+					"rawDisplayName": "Item_3075_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "태양불꽃 방패",
+					"itemID": 3068,
+					"price": 1000,
+					"rawDescription": "GeneratedTip_Item_3068_Description",
+					"rawDisplayName": "Item_3068_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "파수꾼의 갑옷",
+					"itemID": 3082,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3082_Description",
+					"rawDisplayName": "Item_3082_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "거인의 허리띠",
+					"itemID": 1011,
+					"price": 500,
+					"rawDescription": "GeneratedTip_Item_1011_Description",
+					"rawDisplayName": "Item_1011_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Shen",
+			"rawSkinName": "game_character_skin_displayname_Shen_49",
+			"respawnTimer": 0.0,
+			"riotId": "벨코즈#KR91",
+			"riotIdGameName": "벨코즈",
+			"riotIdTagLine": "KR91",
+			"runes": {
+				"keystone": {
+					"displayName": "여진",
+					"id": 8439,
+					"rawDescription": "perk_tooltip_VeteranAftershock",
+					"rawDisplayName": "perk_displayname_VeteranAftershock"
+				},
+				"primaryRuneTree": {
+					"displayName": "결의",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 44,
+				"creepScore": 20,
+				"deaths": 6,
+				"kills": 9,
+				"wardScore": 0.0
+			},
+			"skinID": 49,
+			"skinName": "재의 수호자 쉔",
+			"summonerName": "벨코즈#KR91",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "표식",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "사미라",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "판금 장화",
+					"itemID": 3047,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3047_Description",
+					"rawDisplayName": "Item_3047_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "징수의 총",
+					"itemID": 6676,
+					"price": 525,
+					"rawDescription": "GeneratedTip_Item_6676_Description",
+					"rawDisplayName": "Item_6676_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "피바라기",
+					"itemID": 3072,
+					"price": 325,
+					"rawDescription": "GeneratedTip_Item_3072_Description",
+					"rawDisplayName": "Item_3072_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "무한의 대검",
+					"itemID": 3031,
+					"price": 675,
+					"rawDescription": "GeneratedTip_Item_3031_Description",
+					"rawDisplayName": "Item_3031_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "최후의 속삭임",
+					"itemID": 3035,
+					"price": 750,
+					"rawDescription": "GeneratedTip_Item_3035_Description",
+					"rawDisplayName": "Item_3035_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "절정의 화살",
+					"itemID": 6670,
+					"price": 350,
+					"rawDescription": "GeneratedTip_Item_6670_Description",
+					"rawDisplayName": "Item_6670_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Samira",
+			"rawSkinName": "game_character_skin_displayname_Samira_0",
+			"respawnTimer": 16.401132583618165,
+			"riotId": "너누누니#KR1",
+			"riotIdGameName": "너누누니",
+			"riotIdTagLine": "KR1",
+			"runes": {
+				"keystone": {
+					"displayName": "정복자",
+					"id": 8010,
+					"rawDescription": "perk_tooltip_Conqueror",
+					"rawDisplayName": "perk_displayname_Conqueror"
+				},
+				"primaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "지배",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 25,
+				"creepScore": 60,
+				"deaths": 11,
+				"kills": 13,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"skinName": "",
+			"summonerName": "너누누니#KR1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "표식",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		},
+		{
+			"championName": "나피리",
+			"isBot": false,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "오만",
+					"itemID": 126697,
+					"price": 900,
+					"rawDescription": "GeneratedTip_Item_126697_Description",
+					"rawDisplayName": "Item_126697_Name",
+					"slot": 0
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "불경한 히드라",
+					"itemID": 6698,
+					"price": 663,
+					"rawDescription": "GeneratedTip_Item_6698_Description",
+					"rawDisplayName": "Item_6698_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "징수의 총",
+					"itemID": 6676,
+					"price": 525,
+					"rawDescription": "GeneratedTip_Item_6676_Description",
+					"rawDisplayName": "Item_6676_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "헤르메스의 발걸음",
+					"itemID": 3111,
+					"price": 550,
+					"rawDescription": "GeneratedTip_Item_3111_Description",
+					"rawDisplayName": "Item_3111_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "필멸자의 운명",
+					"itemID": 3033,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_3033_Description",
+					"rawDisplayName": "Item_3033_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "톱날 단검",
+					"itemID": 3134,
+					"price": 300,
+					"rawDescription": "GeneratedTip_Item_3134_Description",
+					"rawDisplayName": "Item_3134_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": true,
+					"count": 2,
+					"displayName": "포로 간식",
+					"itemID": 2052,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_2052_Description",
+					"rawDisplayName": "Item_2052_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "NONE",
+			"rawChampionName": "game_character_displayname_Naafiri",
+			"rawSkinName": "game_character_skin_displayname_Naafiri_20",
+			"respawnTimer": 24.179039001464845,
+			"riotId": "Iloveyou but#KR1",
+			"riotIdGameName": "Iloveyou but",
+			"riotIdTagLine": "KR1",
+			"runes": {
+				"keystone": {
+					"displayName": "감전",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "지배",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "정밀",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				}
+			},
+			"scores": {
+				"assists": 20,
+				"creepScore": 60,
+				"deaths": 9,
+				"kills": 23,
+				"wardScore": 0.0
+			},
+			"skinID": 20,
+			"skinName": "핫도그 나피리",
+			"summonerName": "Iloveyou but#KR1",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "표식",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSnowball_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSnowball_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "점멸",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.020338499918580056
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 45.019683837890628
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 55.06046676635742,
+				"KillerName": "머더뽀꾸",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 55.06046676635742,
+				"Recipient": "머더뽀꾸"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 4,
+				"EventName": "ChampionKill",
+				"EventTime": 60.834251403808597,
+				"KillerName": "너누누니",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"JEROME",
+					"뽀삐뽀삐",
+					"역 만"
+				],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 64.48303985595703,
+				"KillerName": "Laserbeam",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 6,
+				"EventName": "ChampionKill",
+				"EventTime": 64.71887969970703,
+				"KillerName": "벨코즈",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 67.4168701171875,
+				"KillerName": "머더뽀꾸",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈"
+				],
+				"EventID": 8,
+				"EventName": "ChampionKill",
+				"EventTime": 72.31161499023438,
+				"KillerName": "Iloveyou but",
+				"VictimName": "역 만"
+			},
+			{
+				"Assisters": [
+					"Laserbeam"
+				],
+				"EventID": 9,
+				"EventName": "ChampionKill",
+				"EventTime": 93.67903900146485,
+				"KillerName": "JEROME",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"Laserbeam"
+				],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 103.32791137695313,
+				"KillerName": "뽀삐뽀삐",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 11,
+				"EventName": "ChampionKill",
+				"EventTime": 112.71304321289063,
+				"KillerName": "JEROME",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [
+					"벨코즈",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 122.76957702636719,
+				"KillerName": "더더아가씌",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 13,
+				"EventName": "ChampionKill",
+				"EventTime": 131.87789916992188,
+				"KillerName": "벨코즈",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈"
+				],
+				"EventID": 14,
+				"EventName": "ChampionKill",
+				"EventTime": 140.86703491210938,
+				"KillerName": "더더아가씌",
+				"VictimName": "역 만"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 15,
+				"EventName": "ChampionKill",
+				"EventTime": 210.13426208496095,
+				"KillerName": "너누누니",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"벨코즈",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 16,
+				"EventName": "ChampionKill",
+				"EventTime": 214.4380645751953,
+				"KillerName": "더더아가씌",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 17,
+				"EventName": "ChampionKill",
+				"EventTime": 217.85035705566407,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"역 만"
+				],
+				"EventID": 18,
+				"EventName": "ChampionKill",
+				"EventTime": 240.3634490966797,
+				"KillerName": "JEROME",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"역 만"
+				],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 241.4542999267578,
+				"KillerName": "JEROME",
+				"VictimName": "벨코즈"
+			},
+			{
+				"EventID": 20,
+				"EventName": "Multikill",
+				"EventTime": 241.4542999267578,
+				"KillStreak": 2,
+				"KillerName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 21,
+				"EventName": "ChampionKill",
+				"EventTime": 242.86265563964845,
+				"KillerName": "JEROME",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"EventID": 22,
+				"EventName": "Multikill",
+				"EventTime": 242.86265563964845,
+				"KillStreak": 3,
+				"KillerName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 23,
+				"EventName": "ChampionKill",
+				"EventTime": 244.22850036621095,
+				"KillerName": "JEROME",
+				"VictimName": "너누누니"
+			},
+			{
+				"EventID": 24,
+				"EventName": "Multikill",
+				"EventTime": 244.22850036621095,
+				"KillStreak": 4,
+				"KillerName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 250.10877990722657,
+				"KillerName": "JEROME",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"EventID": 26,
+				"EventName": "Multikill",
+				"EventTime": 250.10877990722657,
+				"KillStreak": 5,
+				"KillerName": "JEROME"
+			},
+			{
+				"Acer": "JEROME",
+				"AcingTeam": "ORDER",
+				"EventID": 27,
+				"EventName": "Ace",
+				"EventTime": 250.10877990722657
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸"
+				],
+				"EventID": 28,
+				"EventName": "ChampionKill",
+				"EventTime": 266.45758056640627,
+				"KillerName": "벨코즈",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"청 소"
+				],
+				"EventID": 29,
+				"EventName": "ChampionKill",
+				"EventTime": 267.64208984375,
+				"KillerName": "JEROME",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"Assisters": [
+					"벨코즈"
+				],
+				"EventID": 30,
+				"EventName": "ChampionKill",
+				"EventTime": 268.57659912109377,
+				"KillerName": "더더아가씌",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"벨코즈"
+				],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 271.21270751953127,
+				"KillerName": "Iloveyou but",
+				"VictimName": "역 만"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 32,
+				"EventName": "ChampionKill",
+				"EventTime": 275.22406005859377,
+				"KillerName": "머더뽀꾸",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"벨코즈"
+				],
+				"EventID": 33,
+				"EventName": "ChampionKill",
+				"EventTime": 275.32415771484377,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"EventID": 34,
+				"EventName": "Multikill",
+				"EventTime": 275.32415771484377,
+				"KillStreak": 2,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Acer": "Iloveyou but",
+				"AcingTeam": "CHAOS",
+				"EventID": 35,
+				"EventName": "Ace",
+				"EventTime": 275.32415771484377
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 36,
+				"EventName": "ChampionKill",
+				"EventTime": 310.4261779785156,
+				"KillerName": "JEROME",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 37,
+				"EventName": "ChampionKill",
+				"EventTime": 314.9100341796875,
+				"KillerName": "머더뽀꾸",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 38,
+				"EventName": "ChampionKill",
+				"EventTime": 316.881591796875,
+				"KillerName": "Iloveyou but",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 39,
+				"EventName": "ChampionKill",
+				"EventTime": 319.5020446777344,
+				"KillerName": "더더아가씌",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 40,
+				"EventName": "ChampionKill",
+				"EventTime": 320.3695983886719,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"EventID": 41,
+				"EventName": "Multikill",
+				"EventTime": 320.3695983886719,
+				"KillStreak": 2,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸"
+				],
+				"EventID": 42,
+				"EventName": "ChampionKill",
+				"EventTime": 334.6968078613281,
+				"KillerName": "Iloveyou but",
+				"VictimName": "역 만"
+			},
+			{
+				"Assisters": [
+					"뽀삐뽀삐",
+					"역 만"
+				],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 343.76885986328127,
+				"KillerName": "JEROME",
+				"VictimName": "벨코즈"
+			},
+			{
+				"Assisters": [],
+				"EventID": 44,
+				"EventName": "ChampionKill",
+				"EventTime": 343.76885986328127,
+				"KillerName": "청 소",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"Laserbeam"
+				],
+				"EventID": 45,
+				"EventName": "ChampionKill",
+				"EventTime": 361.9618225097656,
+				"KillerName": "JEROME",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"Assisters": [
+					"JEROME",
+					"Laserbeam"
+				],
+				"EventID": 46,
+				"EventName": "TurretKilled",
+				"EventTime": 366.2616882324219,
+				"KillerName": "뽀삐뽀삐",
+				"TurretKilled": "Turret_T2_L_01_A"
+			},
+			{
+				"EventID": 47,
+				"EventName": "FirstBrick",
+				"EventTime": 366.2616882324219,
+				"KillerName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 48,
+				"EventName": "ChampionKill",
+				"EventTime": 367.8384704589844,
+				"KillerName": "JEROME",
+				"VictimName": "너누누니"
+			},
+			{
+				"EventID": 49,
+				"EventName": "Multikill",
+				"EventTime": 367.8384704589844,
+				"KillStreak": 2,
+				"KillerName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌"
+				],
+				"EventID": 50,
+				"EventName": "ChampionKill",
+				"EventTime": 367.9090576171875,
+				"KillerName": "너누누니",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 51,
+				"EventName": "ChampionKill",
+				"EventTime": 375.6902770996094,
+				"KillerName": "벨코즈",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"너누누니"
+				],
+				"EventID": 52,
+				"EventName": "ChampionKill",
+				"EventTime": 379.6258544921875,
+				"KillerName": "벨코즈",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"EventID": 53,
+				"EventName": "Multikill",
+				"EventTime": 379.6258544921875,
+				"KillStreak": 2,
+				"KillerName": "벨코즈"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈"
+				],
+				"EventID": 54,
+				"EventName": "ChampionKill",
+				"EventTime": 390.744873046875,
+				"KillerName": "Iloveyou but",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 55,
+				"EventName": "ChampionKill",
+				"EventTime": 391.01177978515627,
+				"KillerName": "역 만",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 56,
+				"EventName": "ChampionKill",
+				"EventTime": 398.42547607421877,
+				"KillerName": "JEROME",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [],
+				"EventID": 57,
+				"EventName": "ChampionKill",
+				"EventTime": 403.6709899902344,
+				"KillerName": "JEROME",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"EventID": 58,
+				"EventName": "Multikill",
+				"EventTime": 403.6709899902344,
+				"KillStreak": 2,
+				"KillerName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 59,
+				"EventName": "ChampionKill",
+				"EventTime": 411.52752685546877,
+				"KillerName": "머더뽀꾸",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"Laserbeam"
+				],
+				"EventID": 60,
+				"EventName": "ChampionKill",
+				"EventTime": 411.9112854003906,
+				"KillerName": "역 만",
+				"VictimName": "벨코즈"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"Laserbeam"
+				],
+				"EventID": 61,
+				"EventName": "ChampionKill",
+				"EventTime": 411.9112854003906,
+				"KillerName": "역 만",
+				"VictimName": "너누누니"
+			},
+			{
+				"EventID": 62,
+				"EventName": "Multikill",
+				"EventTime": 411.9112854003906,
+				"KillStreak": 2,
+				"KillerName": "역 만"
+			},
+			{
+				"Acer": "역 만",
+				"AcingTeam": "ORDER",
+				"EventID": 63,
+				"EventName": "Ace",
+				"EventTime": 411.9112854003906
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"역 만"
+				],
+				"EventID": 64,
+				"EventName": "ChampionKill",
+				"EventTime": 436.8545227050781,
+				"KillerName": "Laserbeam",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"너누누니"
+				],
+				"EventID": 65,
+				"EventName": "ChampionKill",
+				"EventTime": 450.74285888671877,
+				"KillerName": "Iloveyou but",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"벨코즈"
+				],
+				"EventID": 66,
+				"EventName": "ChampionKill",
+				"EventTime": 459.92352294921877,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"EventID": 67,
+				"EventName": "Multikill",
+				"EventTime": 459.92352294921877,
+				"KillStreak": 2,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 68,
+				"EventName": "ChampionKill",
+				"EventTime": 475.1296081542969,
+				"KillerName": "너누누니",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 69,
+				"EventName": "ChampionKill",
+				"EventTime": 515.0953979492188,
+				"KillerName": "너누누니",
+				"VictimName": "역 만"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"역 만"
+				],
+				"EventID": 70,
+				"EventName": "ChampionKill",
+				"EventTime": 515.312255859375,
+				"KillerName": "Laserbeam",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 71,
+				"EventName": "ChampionKill",
+				"EventTime": 516.6488647460938,
+				"KillerName": "JEROME",
+				"VictimName": "벨코즈"
+			},
+			{
+				"Assisters": [
+					"JEROME",
+					"Laserbeam"
+				],
+				"EventID": 72,
+				"EventName": "ChampionKill",
+				"EventTime": 517.4163818359375,
+				"KillerName": "뽀삐뽀삐",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"Laserbeam"
+				],
+				"EventID": 73,
+				"EventName": "ChampionKill",
+				"EventTime": 534.3480224609375,
+				"KillerName": "JEROME",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"Laserbeam"
+				],
+				"EventID": 74,
+				"EventName": "ChampionKill",
+				"EventTime": 541.4907836914063,
+				"KillerName": "청 소",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐"
+				],
+				"EventID": 75,
+				"EventName": "TurretKilled",
+				"EventTime": 548.85888671875,
+				"KillerName": "Laserbeam",
+				"TurretKilled": "Turret_T2_L_02_A"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"너누누니"
+				],
+				"EventID": 76,
+				"EventName": "ChampionKill",
+				"EventTime": 549.4429931640625,
+				"KillerName": "Iloveyou but",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"너누누니"
+				],
+				"EventID": 77,
+				"EventName": "ChampionKill",
+				"EventTime": 550.8114013671875,
+				"KillerName": "벨코즈",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [],
+				"EventID": 78,
+				"EventName": "ChampionKill",
+				"EventTime": 552.9474487304688,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"EventID": 79,
+				"EventName": "Multikill",
+				"EventTime": 552.9474487304688,
+				"KillStreak": 2,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Assisters": [],
+				"EventID": 80,
+				"EventName": "ChampionKill",
+				"EventTime": 561.953369140625,
+				"KillerName": "Iloveyou but",
+				"VictimName": "역 만"
+			},
+			{
+				"EventID": 81,
+				"EventName": "Multikill",
+				"EventTime": 561.953369140625,
+				"KillStreak": 3,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸"
+				],
+				"EventID": 82,
+				"EventName": "ChampionKill",
+				"EventTime": 566.3746337890625,
+				"KillerName": "벨코즈",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Acer": "벨코즈",
+				"AcingTeam": "CHAOS",
+				"EventID": 83,
+				"EventName": "Ace",
+				"EventTime": 566.3746337890625
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"너누누니"
+				],
+				"EventID": 84,
+				"EventName": "TurretKilled",
+				"EventTime": 582.1683349609375,
+				"KillerName": "벨코즈",
+				"TurretKilled": "Turret_T1_C_08_A"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 85,
+				"EventName": "ChampionKill",
+				"EventTime": 659.486328125,
+				"KillerName": "역 만",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈"
+				],
+				"EventID": 86,
+				"EventName": "ChampionKill",
+				"EventTime": 660.4592895507813,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈"
+				],
+				"EventID": 87,
+				"EventName": "ChampionKill",
+				"EventTime": 663.1167602539063,
+				"KillerName": "Iloveyou but",
+				"VictimName": "JEROME"
+			},
+			{
+				"EventID": 88,
+				"EventName": "Multikill",
+				"EventTime": 663.1167602539063,
+				"KillStreak": 2,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 89,
+				"EventName": "ChampionKill",
+				"EventTime": 671.14013671875,
+				"KillerName": "너누누니",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈"
+				],
+				"EventID": 90,
+				"EventName": "ChampionKill",
+				"EventTime": 679.4866333007813,
+				"KillerName": "너누누니",
+				"VictimName": "역 만"
+			},
+			{
+				"EventID": 91,
+				"EventName": "Multikill",
+				"EventTime": 679.4866333007813,
+				"KillStreak": 2,
+				"KillerName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 92,
+				"EventName": "ChampionKill",
+				"EventTime": 695.3923950195313,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 93,
+				"EventName": "ChampionKill",
+				"EventTime": 700.3267822265625,
+				"KillerName": "너누누니",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 94,
+				"EventName": "ChampionKill",
+				"EventTime": 703.0103149414063,
+				"KillerName": "너누누니",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"EventID": 95,
+				"EventName": "Multikill",
+				"EventTime": 703.0103149414063,
+				"KillStreak": 2,
+				"KillerName": "너누누니"
+			},
+			{
+				"Assisters": [],
+				"EventID": 96,
+				"EventName": "ChampionKill",
+				"EventTime": 703.217529296875,
+				"KillerName": "뽀삐뽀삐",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐"
+				],
+				"EventID": 97,
+				"EventName": "ChampionKill",
+				"EventTime": 713.1602172851563,
+				"KillerName": "역 만",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 98,
+				"EventName": "TurretKilled",
+				"EventTime": 714.3836059570313,
+				"KillerName": "머더뽀꾸",
+				"TurretKilled": "Turret_T1_C_07_A"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌"
+				],
+				"EventID": 99,
+				"EventName": "ChampionKill",
+				"EventTime": 722.3223266601563,
+				"KillerName": "벨코즈",
+				"VictimName": "역 만"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈"
+				],
+				"EventID": 100,
+				"EventName": "ChampionKill",
+				"EventTime": 729.4996948242188,
+				"KillerName": "더더아가씌",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"역 만"
+				],
+				"EventID": 101,
+				"EventName": "ChampionKill",
+				"EventTime": 732.6779174804688,
+				"KillerName": "Laserbeam",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 102,
+				"EventName": "ChampionKill",
+				"EventTime": 736.462158203125,
+				"KillerName": "JEROME",
+				"VictimName": "벨코즈"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME"
+				],
+				"EventID": 103,
+				"EventName": "ChampionKill",
+				"EventTime": 736.5789184570313,
+				"KillerName": "Laserbeam",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"EventID": 104,
+				"EventName": "Multikill",
+				"EventTime": 736.5789184570313,
+				"KillStreak": 2,
+				"KillerName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 105,
+				"EventName": "ChampionKill",
+				"EventTime": 799.895263671875,
+				"KillerName": "Iloveyou but",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈"
+				],
+				"EventID": 106,
+				"EventName": "ChampionKill",
+				"EventTime": 801.6573486328125,
+				"KillerName": "너누누니",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 107,
+				"EventName": "ChampionKill",
+				"EventTime": 801.9743041992188,
+				"KillerName": "역 만",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 108,
+				"EventName": "ChampionKill",
+				"EventTime": 804.3255615234375,
+				"KillerName": "더더아가씌",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈",
+					"너누누니",
+					"Iloveyou but"
+				],
+				"EventID": 109,
+				"EventName": "ChampionKill",
+				"EventTime": 814.4537353515625,
+				"KillerName": "머더뽀꾸",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 110,
+				"EventName": "ChampionKill",
+				"EventTime": 816.3282470703125,
+				"KillerName": "Iloveyou but",
+				"VictimName": "역 만"
+			},
+			{
+				"Acer": "Iloveyou but",
+				"AcingTeam": "CHAOS",
+				"EventID": 111,
+				"EventName": "Ace",
+				"EventTime": 816.3282470703125
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈"
+				],
+				"EventID": 112,
+				"EventName": "InhibKilled",
+				"EventTime": 831.0556640625,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"Laserbeam"
+				],
+				"EventID": 113,
+				"EventName": "ChampionKill",
+				"EventTime": 888.7330322265625,
+				"KillerName": "JEROME",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 114,
+				"EventName": "ChampionKill",
+				"EventTime": 891.120361328125,
+				"KillerName": "뽀삐뽀삐",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"Laserbeam"
+				],
+				"EventID": 115,
+				"EventName": "ChampionKill",
+				"EventTime": 895.1664428710938,
+				"KillerName": "역 만",
+				"VictimName": "더더아가씌"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐",
+					"역 만"
+				],
+				"EventID": 116,
+				"EventName": "InhibKilled",
+				"EventTime": 908.0462646484375,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"벨코즈"
+				],
+				"EventID": 117,
+				"EventName": "ChampionKill",
+				"EventTime": 918.2334594726563,
+				"KillerName": "머더뽀꾸",
+				"VictimName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"Laserbeam"
+				],
+				"EventID": 118,
+				"EventName": "ChampionKill",
+				"EventTime": 919.568603515625,
+				"KillerName": "뽀삐뽀삐",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"역 만"
+				],
+				"EventID": 119,
+				"EventName": "TurretKilled",
+				"EventTime": 922.0048217773438,
+				"KillerName": "Laserbeam",
+				"TurretKilled": "Turret_T2_L_04_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 120,
+				"EventName": "ChampionKill",
+				"EventTime": 922.4458618164063,
+				"KillerName": "벨코즈",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 121,
+				"EventName": "ChampionKill",
+				"EventTime": 924.38134765625,
+				"KillerName": "역 만",
+				"VictimName": "벨코즈"
+			},
+			{
+				"Assisters": [
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 122,
+				"EventName": "ChampionKill",
+				"EventTime": 934.6350708007813,
+				"KillerName": "Iloveyou but",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈"
+				],
+				"EventID": 123,
+				"EventName": "ChampionKill",
+				"EventTime": 941.55078125,
+				"KillerName": "너누누니",
+				"VictimName": "청 소"
+			},
+			{
+				"Assisters": [
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 124,
+				"EventName": "ChampionKill",
+				"EventTime": 943.986572265625,
+				"KillerName": "Iloveyou but",
+				"VictimName": "역 만"
+			},
+			{
+				"EventID": 125,
+				"EventName": "Multikill",
+				"EventTime": 943.986572265625,
+				"KillStreak": 2,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Acer": "Iloveyou but",
+				"AcingTeam": "CHAOS",
+				"EventID": 126,
+				"EventName": "Ace",
+				"EventTime": 943.986572265625
+			},
+			{
+				"Assisters": [],
+				"EventID": 127,
+				"EventName": "ChampionKill",
+				"EventTime": 969.2391357421875,
+				"KillerName": "JEROME",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 128,
+				"EventName": "ChampionKill",
+				"EventTime": 1042.4365234375,
+				"KillerName": "JEROME",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"EventID": 129,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1066.0640869140626,
+				"InhibRespawningSoon": "Barracks_T1_C1"
+			},
+			{
+				"Assisters": [
+					"벨코즈"
+				],
+				"EventID": 130,
+				"EventName": "ChampionKill",
+				"EventTime": 1077.4462890625,
+				"KillerName": "너누누니",
+				"VictimName": "Laserbeam"
+			},
+			{
+				"Assisters": [
+					"벨코즈",
+					"Iloveyou but"
+				],
+				"EventID": 131,
+				"EventName": "ChampionKill",
+				"EventTime": 1080.5870361328126,
+				"KillerName": "너누누니",
+				"VictimName": "JEROME"
+			},
+			{
+				"EventID": 132,
+				"EventName": "Multikill",
+				"EventTime": 1080.5870361328126,
+				"KillStreak": 2,
+				"KillerName": "너누누니"
+			},
+			{
+				"EventID": 133,
+				"EventName": "InhibRespawned",
+				"EventTime": 1081.0966796875,
+				"InhibRespawned": "Barracks_T1_C1"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐"
+				],
+				"EventID": 134,
+				"EventName": "ChampionKill",
+				"EventTime": 1082.04052734375,
+				"KillerName": "역 만",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 135,
+				"EventName": "ChampionKill",
+				"EventTime": 1086.383056640625,
+				"KillerName": "Iloveyou but",
+				"VictimName": "뽀삐뽀삐"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 136,
+				"EventName": "ChampionKill",
+				"EventTime": 1089.1583251953126,
+				"KillerName": "Iloveyou but",
+				"VictimName": "역 만"
+			},
+			{
+				"EventID": 137,
+				"EventName": "Multikill",
+				"EventTime": 1089.1583251953126,
+				"KillStreak": 2,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"머더뽀꾸",
+					"더더아가씌",
+					"벨코즈",
+					"너누누니"
+				],
+				"EventID": 138,
+				"EventName": "ChampionKill",
+				"EventTime": 1091.719482421875,
+				"KillerName": "Iloveyou but",
+				"VictimName": "청 소"
+			},
+			{
+				"EventID": 139,
+				"EventName": "Multikill",
+				"EventTime": 1091.719482421875,
+				"KillStreak": 3,
+				"KillerName": "Iloveyou but"
+			},
+			{
+				"Acer": "Iloveyou but",
+				"AcingTeam": "CHAOS",
+				"EventID": 140,
+				"EventName": "Ace",
+				"EventTime": 1091.719482421875
+			},
+			{
+				"Assisters": [
+					"더더아가씌",
+					"벨코즈"
+				],
+				"EventID": 141,
+				"EventName": "InhibKilled",
+				"EventTime": 1122.6676025390626,
+				"InhibKilled": "Barracks_T1_C1",
+				"KillerName": "머더뽀꾸"
+			},
+			{
+				"Assisters": [],
+				"EventID": 142,
+				"EventName": "ChampionKill",
+				"EventTime": 1123.5528564453126,
+				"KillerName": "JEROME",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"EventID": 143,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1143.042236328125,
+				"InhibRespawningSoon": "Barracks_T2_C1"
+			},
+			{
+				"EventID": 144,
+				"EventName": "InhibRespawned",
+				"EventTime": 1158.099853515625,
+				"InhibRespawned": "Barracks_T2_C1"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 145,
+				"EventName": "ChampionKill",
+				"EventTime": 1166.2305908203126,
+				"KillerName": "역 만",
+				"VictimName": "너누누니"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 146,
+				"EventName": "ChampionKill",
+				"EventTime": 1172.008544921875,
+				"KillerName": "JEROME",
+				"VictimName": "Iloveyou but"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"뽀삐뽀삐",
+					"Laserbeam",
+					"역 만"
+				],
+				"EventID": 147,
+				"EventName": "ChampionKill",
+				"EventTime": 1174.621337890625,
+				"KillerName": "JEROME",
+				"VictimName": "머더뽀꾸"
+			},
+			{
+				"EventID": 148,
+				"EventName": "Multikill",
+				"EventTime": 1174.621337890625,
+				"KillStreak": 2,
+				"KillerName": "JEROME"
+			},
+			{
+				"Assisters": [
+					"청 소",
+					"JEROME",
+					"뽀삐뽀삐",
+					"Laserbeam"
+				],
+				"EventID": 149,
+				"EventName": "InhibKilled",
+				"EventTime": 1181.5335693359376,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "역 만"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "ARAM",
+		"gameTime": 1187.8294677734376,
+		"mapName": "Map12",
+		"mapNumber": 12,
+		"mapTerrain": "Default"
+	}
+}
